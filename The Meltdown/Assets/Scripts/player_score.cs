@@ -8,11 +8,13 @@ public class player_score : MonoBehaviour
 
     public int score = 0;
 
+    public string level;
+
     public void OnCollisionEnter2D(Collision2D collision)
     {
         ++score;
 
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene(level);
 
     }
 
@@ -25,7 +27,7 @@ public class player_score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(score);
+        Debug.Log(score);
     }
 
 
