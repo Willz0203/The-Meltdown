@@ -56,7 +56,7 @@ public class ball_move : MonoBehaviour
         v3Velocity = rb2D.velocity;
         //Debug.Log(v3Velocity);
 
-        if (Input.GetKeyUp("space"))
+        if (Input.GetKeyUp(KeyCode.Space))
         {
             --canJump;
         } 
@@ -69,7 +69,7 @@ public class ball_move : MonoBehaviour
 
 
         //check if a jump input was made
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
              
             //check if the player is allowed to jump
@@ -90,7 +90,7 @@ public class ball_move : MonoBehaviour
         }
 
         //check if a left input was made
-        if (Input.GetKey("a"))
+        if (Input.GetKey(KeyCode.A))
         {
 
             if (sprint)
@@ -119,7 +119,7 @@ public class ball_move : MonoBehaviour
         }
 
         //check if a right input was made
-        if (Input.GetKey("d"))
+        if (Input.GetKey(KeyCode.D))
         {
             if (sprint)
             {
