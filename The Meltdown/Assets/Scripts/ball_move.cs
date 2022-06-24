@@ -78,7 +78,7 @@ public class ball_move : MonoBehaviour
                 
                 for (jumpTimer=60;jumpTimer>0;--jumpTimer)
                 {
-                    rb2D.AddForce(Vector3.up*8);
+                    rb2D.AddForce(Vector3.up*4);
                 }
                 //add an upwards force
 
