@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2443793444639985834}
   - component: {fileID: 2443793444639985833}
   - component: {fileID: 2443793444639985832}
+  - component: {fileID: 4547402218388171838}
   m_Layer: 0
   m_Name: Tracking Camera
   m_TagString: MainCamera
@@ -84,3 +85,17 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2443793444639985839}
   m_Enabled: 1
+--- !u!114 &4547402218388171838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2443793444639985839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5f769050dc7b8144b6ed5f0c2bac0d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  offset: {x: 0, y: 0, z: 0}
