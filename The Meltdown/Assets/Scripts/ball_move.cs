@@ -28,7 +28,7 @@ public class ball_move : MonoBehaviour
         if (collision.collider.GetType() == typeof(BoxCollider2D))
         {
             // do stuff only for the box collider
-            canJump = 2;
+            canJump = 1;
             jumpTimer = 60;
         }
 
