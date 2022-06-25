@@ -2,24 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class transition_manage : MonoBehaviour
 {
    
-    private Button play;
+    public GameObject Player;
     
     private void OnEnable()
     {
 
-        var rootVisualElement = GetComponent<UIDocument>().rootVisualElement;
+        var Screen = GetComponent<UIDocument>().rootVisualElement;
 
-        play = rootVisualElement.Q<Button>();
+        Screen.Q("play").RegisterCallback<ClickEvent>(en => StartGame());
 
-        play.clickable.clicked += () => Debug.Log("clicked!");
+        
     }
 
     
-
+    void StartGame()
+    {
+        SceneManager.LoadScene("Area_01");
+        Instantiate(Player, new Vector3(4.5f, 1.5f, 0), Quaternion.identity);
+    }
 
     // Update is called once per frame
     void Update()

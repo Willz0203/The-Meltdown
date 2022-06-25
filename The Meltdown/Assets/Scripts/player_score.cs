@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class player_score : MonoBehaviour
 {
 
+    public GameObject character;
+
     public int score = 0;
 
     public string level;
@@ -15,6 +17,8 @@ public class player_score : MonoBehaviour
         ++score;
 
         SceneManager.LoadScene(level);
+        character = GameObject.FindWithTag("Player");
+        character.transform.Translate(-2,2,0);
 
     }
 
@@ -27,7 +31,7 @@ public class player_score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(score);
+        //Debug.Log(score);
     }
 
 
