@@ -120,7 +120,7 @@ public class ball_move : MonoBehaviour
 
         //check if a right input was made
         if (Input.GetKey(KeyCode.D))
-        {
+        {   
             if (sprint)
             {
                 //check if the player is moving too fast
