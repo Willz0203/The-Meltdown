@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class transition_manage : MonoBehaviour
 {
    
-    VisualElement Screen;
+    
     
     private void OnEnable()
     {
