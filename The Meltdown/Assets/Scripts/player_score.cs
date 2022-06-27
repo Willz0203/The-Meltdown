@@ -10,6 +10,8 @@ public class player_score : MonoBehaviour
 
     public int score = 0;
 
+    public int direction;
+
     public string level;
 
     public void OnCollisionEnter2D(Collision2D collision)
@@ -18,8 +20,21 @@ public class player_score : MonoBehaviour
 
         SceneManager.LoadScene(level);
         character = GameObject.FindWithTag("Player");
-        character.transform.Translate(-2,2,0);
 
+        switch (direction)
+        {
+            case 1:
+                character.transform.Translate(2,0.01f,0);
+                break;
+            
+            case 2:
+                character.transform.Translate(-2,0.01f,0);
+                break;
+
+
+        }
+
+    
     }
 
     // Start is called before the first frame update

@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: 3f6c78f51ed1ecc4197a8b907b703e98
+  - enabled: 1
+    path: Assets/Scenes/Area_03.unity
+    guid: 4058b53f0f64a264da005bc811905ba8
   m_configObjects: {}

@@ -15,6 +15,7 @@ public class transition_manage : MonoBehaviour
         var Screen = GetComponent<UIDocument>().rootVisualElement;
 
         Screen.Q("play").RegisterCallback<ClickEvent>(en => StartGame());
+        Screen.Q("exit").RegisterCallback<ClickEvent>(en => ExitGame());
 
         
     }
@@ -24,6 +25,11 @@ public class transition_manage : MonoBehaviour
     {
         SceneManager.LoadScene("Area_01");
         Instantiate(Player, new Vector3(4.5f, 1.5f, 0), Quaternion.identity);
+    }
+
+    void ExitGame()
+    {
+        Application.Quit();
     }
 
     // Update is called once per frame

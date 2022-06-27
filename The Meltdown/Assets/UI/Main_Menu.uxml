@@ -2,11 +2,13 @@
     <Style src="project://database/Assets/UI/Main_Menu_uss.uss?fileID=7433441132597879392&amp;guid=30c9016ea5d2b0448967bb24d4c97c45&amp;type=3#Main_Menu_uss" />
     <ui:VisualElement name="Screen" style="flex-grow: 1; flex-direction: row; justify-content: space-between; background-color: rgb(51, 0, 0);">
         <ui:VisualElement name="left">
-            <ui:Label tabindex="-1" text="Meltdown" display-tooltip-when-elided="true" name="Title" style="-unity-font: url(&apos;project://database/Assets/UI/Fonts/BebasNeue-Regular.ttf?fileID=12800000&amp;guid=58c4b07de967b494d9a686d17ed408fa&amp;type=3#BebasNeue-Regular&apos;); -unity-text-align: upper-center; font-size: 36px; padding-bottom: 0; justify-content: space-between; padding-right: 0; padding-left: 0; padding-top: 0; flex-grow: 0; -unity-font-style: bold; color: rgba(255, 255, 255, 255);" />
+            <ui:Label tabindex="-1" text="Meltdown" display-tooltip-when-elided="true" name="Title" style="-unity-font: url(&apos;project://database/Assets/UI/Fonts/BebasNeue-Regular.ttf?fileID=12800000&amp;guid=58c4b07de967b494d9a686d17ed408fa&amp;type=3#BebasNeue-Regular&apos;); -unity-text-align: upper-center; font-size: 36px; padding-bottom: 100px; justify-content: space-between; padding-right: 0; padding-left: 0; padding-top: 25px; flex-grow: 0; -unity-font-style: bold; color: rgb(255, 255, 255); border-bottom-width: 0;" />
             <ui:Button tabindex="-1" text="Play" display-tooltip-when-elided="true" name="play" enable-rich-text="true" class="MM_button" style="padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
             <ui:Button tabindex="-1" text="Exit" display-tooltip-when-elided="true" name="exit" class="MM_button" />
         </ui:VisualElement>
         <ui:VisualElement name="middle" style="justify-content: flex-start;" />
-        <ui:VisualElement name="right" />
+        <ui:VisualElement name="right" style="justify-content: flex-end;">
+            <ui:Label tabindex="-1" text="Pre-alpha Build 1" display-tooltip-when-elided="true" style="justify-content: flex-start; padding-bottom: 2px;" />
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
