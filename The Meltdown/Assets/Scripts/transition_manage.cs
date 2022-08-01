@@ -8,6 +8,7 @@ public class transition_manage : MonoBehaviour
 {
    
     public GameObject Player;
+    public GameObject UI;
     
     private void OnEnable()
     {
@@ -25,6 +26,7 @@ public class transition_manage : MonoBehaviour
     {
         SceneManager.LoadScene("Area_01");
         Instantiate(Player, new Vector3(4.5f, 1.5f, 0), Quaternion.identity);
+        Instantiate(UI, new Vector3(0, 0, 0), Quaternion.identity);
     }
 
     void ExitGame()

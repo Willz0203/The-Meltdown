@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/General_UI_uss.uss?fileID=7433441132597879392&amp;guid=725bf99fef2472a49bd14f28a011138f&amp;type=3#General_UI_uss" />
+    <ui:VisualElement style="flex-grow: 1; flex-direction: row; justify-content: space-between;">
+        <ui:VisualElement name="left" style="justify-content: center;">
+            <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="Score" class="Labels" />
+        </ui:VisualElement>
+        <ui:VisualElement name="right" style="flex-direction: column;" />
+    </ui:VisualElement>
+</ui:UXML>

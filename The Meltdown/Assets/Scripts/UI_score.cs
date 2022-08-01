@@ -8,6 +8,8 @@ public class UI_score : MonoBehaviour
 
     private Label scoreLabel;
 
+    private int temp_score;
+
     private int score;
 
     private void OnEnable()
@@ -15,14 +17,16 @@ public class UI_score : MonoBehaviour
 
         var rootVisualElement = GetComponent<UIDocument>().rootVisualElement;
 
-        scoreLabel = rootVisualElement.Q<Label>("current-score");
+        scoreLabel = rootVisualElement.Q<Label>("Score");
 
     }
 
     public void UpdateScore()
     {
 
-        score = FindObjectOfType<player_score>().SendScoreUpdate();
+        temp_score = FindObjectOfType<player_score>().SendScoreUpdate();
+
+        score = score + temp_score;
 
         scoreLabel.text = $"Score: {score}";  
     }  

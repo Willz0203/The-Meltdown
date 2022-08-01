@@ -269,3 +269,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 3605644439694862710, guid: b5425118435dd8044905552dcc2e2698, type: 3}
+  UI: {fileID: 7433726828699803532, guid: 46e6219aec86d3f4fa8de367905feca0, type: 3}
